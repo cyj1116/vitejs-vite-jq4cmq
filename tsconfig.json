@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "strict": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "pretty": true,
+    "lib": ["esnext", "dom"],
+    "outDir": "./dist",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "allowJs": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@@/*": ["./*"],
+      "assets/*": ["./src/assets/*"],
+      "images/*": ["./src/assets/images/*"],
+      "videos/*": ["./src/assets/videos/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["./**/*.ts"]
+}
